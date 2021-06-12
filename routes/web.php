@@ -26,3 +26,6 @@ Route::get('/jenis_buku',[Jenis_bukuController::class, 'index']);
 Route::get('/user',[UserController::class, 'index']);
 Route::get('/rak_buku',[Rak_bukuController::class, 'index']);
 Route::get('/bukuexport',[BukuController::class, 'bukuexport']);
+Route::get('/jenis_bukuexport',[Jenis_bukuController::class, 'jenis_bukuexport']);
+Route::get('/userexport',[UserController::class, 'userexport']);
+Route::get('/rak_bukuexport',[Rak_bukuController::class, 'rak_bukuexport']);

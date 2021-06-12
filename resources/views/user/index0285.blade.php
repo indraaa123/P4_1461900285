@@ -34,6 +34,7 @@
 
 <body>
     <div style="overflow-%: auto">
+    <div class="card-header"><a href="{{ route('userexport') }}" class="btn btn-succes">Export</a></div>
 
         <table>
             <thead>

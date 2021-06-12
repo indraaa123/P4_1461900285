@@ -34,6 +34,7 @@
 
 <body>
     <div style="overflow-%: auto">
+    <div class="card-header"><a href="{{ route('jenis_bukuexport') }}" class="btn btn-succes">Export</a></div>
 
         <table>
             <thead>
