@@ -2,6 +2,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1 ">
     <title>DATA RAK BUKU</title>
     <h3>Data Rak Buku</h3>
+    <div class="card-header"><a href="{{ route('rak_bukuexport') }}" class="btn btn-succes">Export</a></div>
     <style>
     
         table{
@@ -34,7 +35,6 @@
 
 <body>
     <div style="overflow-%: auto">
-    <div class="card-header"><a href="{{ route('rak_bukuexport') }}" class="btn btn-succes">Export</a></div>
 
         <table>
             <thead>
