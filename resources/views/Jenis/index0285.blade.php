@@ -1,7 +1,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1 ">
-    <title>DATA BUKU</title>
-    <h3>Data Buku</h3>
+    <title>DATA JENIS BUKU</title>
+    <h3>Data Jenis Buku</h3>
     <style>
     
         table{
@@ -34,26 +34,25 @@
 
 <body>
     <div style="overflow-%: auto">
-		<div class="card-header"><a href="{{ route('exportbuku') }}" class="btn btn-succes">Export</a></div>
+
         <table>
             <thead>
                 <tr>
                     <th>No</th>
                     <th>Id</th>
-                    <th>Judul</th>
-                    <th>Tahun Terbit</th>
+                    <th>Jenis</th>
+
                 </tr>
             </thead>
             <tbody>
                 <?php $no = 1; ?>
-                @foreach ($data_buku as $b)
+                @foreach ($jenis as $b)
 
                 <tr>
                     <th>{{ $no++ }}</th>
                     <th>{{ $b->id }}</th>
-                    <th>{{ $b->judul }}</th>
-                    <th>{{ $b->tahun_terbit }}</th>
-                    
+                    <th>{{ $b->jenis }}</th>
+    
                 </tr>
                 
                 @endforeach

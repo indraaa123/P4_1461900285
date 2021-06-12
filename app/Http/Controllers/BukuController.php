@@ -2,15 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Buku;
+use App\Http\Controllers\BukuController;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
+use DB;
 
-class Buku0285Controller extends Controller
+class BukuController extends Controller
 {
     public function index()
     {
-    	$data_buku= buku::all();
+    	$data_buku= DB::table('buku')->get();
     	return view('buku.index',compact('data_buku'));
  
     }

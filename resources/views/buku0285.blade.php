@@ -23,10 +23,9 @@
 		@foreach($data_buku as $b)
 		<tr>
 			<td>{{ $no++ }}</td>
-			<td>{{ $b['id'] }}</td>
-			<td>{{ $b['judul'] }}</td>
-			<td>{{ $b['tahun_terbit'] }}</td>
-			
+			<td>{{ $b->id }}</td>
+			<td>{{ $b->judul }}</td>
+			<td>{{ $b->tahun_terbit }}</td>
 			
 		</tr>
 		@endforeach
