@@ -6,9 +6,9 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 
-class Buku extends Model
+class Rak_buku extends Model
 {
-    protected $table='buku';
+    protected $table='Rak_buku';
     public $timestamps = false;
     use HasFactory;
 }

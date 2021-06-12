@@ -2,6 +2,7 @@
 
 namespace App\Exports;
 
+use App\Models\Jenis_buku;
 use Maatwebsite\Excel\Concerns\FromCollection;
 
 class Jenis_bukuExport implements FromCollection
@@ -14,4 +15,5 @@ class Jenis_bukuExport implements FromCollection
         //
         return Jenis_buku::all();
     }
+   
 }
