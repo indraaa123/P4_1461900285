@@ -25,4 +25,4 @@ Route::get('/buku',[BukuController::class, 'index']);
 Route::get('/jenis_buku',[Jenis_bukuController::class, 'index']);
 Route::get('/user',[UserController::class, 'index']);
 Route::get('/rak_buku',[Rak_bukuController::class, 'index']);
-Route::get('/exportbuku',[Rak_bukuController::class, 'bukuexport']);
+Route::get('/bukuexport',[BukuController::class, 'bukuexport']);
