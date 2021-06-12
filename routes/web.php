@@ -5,6 +5,7 @@ use App\Http\Controllers\BukuController;
 use App\Http\Controllers\Jenis_bukuController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\Rak_bukuController;
+use Maatwebsite\Excel\Facades\Excel;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,7 +26,7 @@ Route::get('/buku',[BukuController::class, 'index']);
 Route::get('/jenis_buku',[Jenis_bukuController::class, 'index']);
 Route::get('/user',[UserController::class, 'index']);
 Route::get('/rak_buku',[Rak_bukuController::class, 'index']);
-Route::get('/bukuexport',[BukuController::class, 'bukuexport']);
-Route::get('/jenis_bukuexport',[Jenis_bukuController::class, 'jenis_bukuexport']);
-Route::get('/userexport',[UserController::class, 'userexport']);
-Route::get('/rak_bukuexport',[Rak_bukuController::class, 'rak_bukuexport']);
+Route::get('/exportbuku',[BukuController::class, 'bukuexport'])->name('exportbuku');
+Route::get('/exportjenis_buku',[Jenis_bukuController::class, 'jenis_bukuexport'])->name('exportjenis_buku');
+Route::get('/exportuser',[UserController::class, 'userexport'])->name('exportuser');
+Route::get('/exportrak_buku',[Rak_bukuController::class, 'rak_bukuexport'])->name('exportrak_buku');

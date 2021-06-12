@@ -2,7 +2,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1 ">
     <title>DATA JENIS BUKU</title>
     <h3>Data Jenis Buku</h3>
-    <div class="card-header"><a href="{{ route('jenis_bukuexport') }}" class="btn btn-succes">Export</a></div>
+    <div class="card-header"><a href="{{ route('exportjenis_buku') }}" class="btn btn-succes">Export</a></div>
     <style>
     
         table{

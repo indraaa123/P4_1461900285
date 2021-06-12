@@ -2,7 +2,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1 ">
     <title>DATA BUKU</title>
     <h3>Data Buku</h3>
-    <div class="card-header"><a href="{{ route('bukuexport') }}" class="btn btn-succes">Export</a></div>
+    <div class="card-header"><a href="{{ route('exportbuku') }}" class="btn btn-succes">Export</a></div>
     <style>
     
         table{
